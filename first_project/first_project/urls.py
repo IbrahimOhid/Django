@@ -16,9 +16,14 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from payments import views
+from payments import views as pay
+from listing_details import views as li
+from user_authentication import views as co
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', views.django, name='django')
+    path('', pay.name),
+    path('learn/', pay.learn),
+    path('list/', li.list),
+    path('code/', co.code),
 ]

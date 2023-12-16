@@ -16,14 +16,10 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from payments import views as pay
-from listing_details import views as li
-from user_authentication import views as co
+from django.urls.conf import include
 
 urlpatterns = [
-    path('admin/', admin.site.urls),
-    path('', pay.name),
-    path('learn/', pay.learn),
-    path('list/', li.list),
-    path('code/', co.code),
+    path('payment/', include('payments.urls')),
+    path('listing/', include('listing_details.urls')),
+    path('user/', include('user_authentication.urls'))
 ]

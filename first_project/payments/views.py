@@ -3,7 +3,5 @@ from django.http.response import HttpResponse
 
 # Create your views here.
 def name(request):
-    return HttpResponse('<h1>I am Mohammad  Ibrahim</h1>')
+    return render(request, 'payment.html')
 
-def learn(request):
-    return HttpResponse('<h1>I Learn Django</h1>')

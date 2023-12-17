@@ -3,4 +3,4 @@ from django.http.response import HttpResponse
 
 # Create your views here.
 def list(request):
-    return HttpResponse('<h1>This is list Page. List:- 1 , List:- 2</h1>')
+    return render(request, 'listing.html')

@@ -13,3 +13,7 @@ def code(request):
 def date(request):
     da = datetime.now()
     return render(request, 'user_authentication/date.html', {'d': da} )
+
+def  student(request):
+    name = {'students': ['ibrahim', 'ohid', 'ebnol', 'osman', 'mohammad']}
+    return render(request, 'user_authentication/studentInfo.html', name)

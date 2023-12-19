@@ -7,9 +7,16 @@
     <title>Bkash</title>
   </head>
   <body>
-    <h1>You Can Pay {{pm}}</h1>
-    <h1>You will Get Discount {{dis}}</h1>
-    <h1>{{con}}</h1>
+    {% if pam %}
+
+    <h1>You Can Pay Using {{pm}}</h1>
+
+    {% elif disc %}
+    <h1>You Can Get {{dis}} Discount</h1>
+
+    {% else %}
+    <h1>You Can Pay Using Rocket</h1>
+    {% endif %}
 
     
   </body>

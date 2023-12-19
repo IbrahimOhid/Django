@@ -10,5 +10,5 @@ def bkash(request):
     return render(request, 'payment/payment1.html', payment_info)
 
 def rocket(request):
-    return render(request, 'payment/payment2.html')
+    return render(request, 'payment/payment2.html', {'nam': 'Mohammad Ibrahim'})
 

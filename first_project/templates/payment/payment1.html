@@ -1,23 +1,5 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bkash</title>
-  </head>
-  <body>
-    {% if pam %}
+{% extends 'common_code/base.html' %} {% block title %} payment-1 {% endblock title %}
 
-    <h1>You Can Pay Using {{pm}}</h1>
-
-    {% elif disc %}
-    <h1>You Can Get {{dis}} Discount</h1>
-
-    {% else %}
-    <h1>You Can Pay Using Rocket</h1>
-    {% endif %}
-
-    
-  </body>
-</html>
+{% block content %}
+ <h1>You can Pay BKASH</h1>
+{% endblock content %}

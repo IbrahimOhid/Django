@@ -1,15 +1,16 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Student Info</title>
-  </head>
-  <body>
-    {% for name in students  %} {{forloop.revcounter}} {{name}} <br> {% endfor %}
-    
+{% extends 'common_code/base.html' %}
 
-    
-  </body>
-</html>
+{% block title %}
+ student Info
+{% endblock title %}
+
+{% block content %}
+<h3>All Student Name: </h3>
+<ol>
+  <li>Mohammad</li>
+  <li>Ibrahim</li>
+  <li>Ohid</li>
+  <li>Ebna</li>
+  <li>Osman</li>
+</ol>
+{% endblock content %}

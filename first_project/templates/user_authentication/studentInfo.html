@@ -1,8 +1,16 @@
-{% extends 'common_code/base.html' %}
+{% extends 'common_code/base.html' %} {% load static %}
+
+{% block css %}
+      <link rel="stylesheet" href="{% static 'css/student.css' %}" />
+    {% endblock %}
 
 {% block title %}
  student Info
 {% endblock title %}
+
+{% block img %}
+      <img src="{% static 'images/2.jpg' %}" alt="" />
+    {% endblock %}
 
 {% block content %}
 <h3>All Student Name: </h3>
@@ -14,3 +22,4 @@
   <li>Osman</li>
 </ol>
 {% endblock content %}
+

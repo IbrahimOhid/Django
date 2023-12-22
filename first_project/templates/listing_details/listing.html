@@ -1,8 +1,19 @@
-{% extends 'common_code/base.html' %}
+{% extends 'common_code/base.html' %} {% load static %}
 {% block title %}
   listing
-{% endblock title %}  
+{% endblock %}
+
+{% block css %}
+  <link rel="stylesheet" href="{% static 'css/list.css' %}" />
+{% endblock %}
 
 {% block content %}
- <h1>This in Listing Page</h1>
-{% endblock content %}
+  <h1>Student List</h1>
+  <ol>
+    <li>OHid</li>
+  </ol>
+{% endblock %}
+
+{% block img %}
+      <img src="{% static 'images/3.jpg' %}" alt="" />
+    {% endblock %}
